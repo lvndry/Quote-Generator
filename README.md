@@ -1,2 +1,2 @@
-# Quote-Generator-FreeCodeCamp-
-Simple quote generator
+#Quote Generator
+Simple quote generator using [quotesondesign](quotesondesign.com) API
