@@ -1,0 +1,59 @@
+body{
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #20a18d;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  -moz-transition: background-color 0.7s ease-in-out;
+  -o-transition: background-color 0.7s ease-in-out;
+  -khtml-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.container{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  padding: auto;
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  border: 10px green solid;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#quote-content{
+  color: violet;
+  margin: auto;
+  padding: auto;
+  font-size: 2.2em;
+  font-weight: bold;
+  clear: both;
+}
+
+#quote-author{
+  margin: auto;
+  padding: auto;
+  font-size: 2.2em;
+  font-weight: bold;
+  clear: both;
+}
+
+@font-face {
+  font-family: ligth;
+  src: url('fonts/ssp-light.ttf');
+}
+
+#qgt{
+  font-size: 2em;
+  font-family: ligth, monaco, Consolas, "Lucida Console", monospace;
+  font-weight: bold;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #111111 !important;
+    border-color: #000000 !important;
+}
