@@ -1,5 +1,5 @@
 //Function that get a randome quote
-jQuery(function($){ //$(document).ready(function(){
+jQuery(function($){ // === $(document).ready(function(){
   $('#generator').on('click', function(e) {
     e.preventDefault();
     $.ajax( {
@@ -8,13 +8,7 @@ jQuery(function($){ //$(document).ready(function(){
         var post = data.shift(); // The data is an array of posts. Grab the first one.
         $('#quote-author').text('- ' + post.title);
         $('#quote-content').html("<p>" + post.content + "</p>");
-
-        // If the Source is available, use it. Otherwise hide it.
-        if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {
-          $('#quote-source').html('Source:' + post.custom_meta.Source);
-        } else {
-          $('#quote-source').text('');
-        }
+        document.getElementById('twitter').href = "https://twitter.com/intent/tweet?text=" + $(post.content).text();
       },
       cache: false
     });

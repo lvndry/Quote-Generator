@@ -53,7 +53,7 @@ body{
 
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active {
+.btn-primary {
     background-color: #111111 !important;
     border-color: #000000 !important;
 }
